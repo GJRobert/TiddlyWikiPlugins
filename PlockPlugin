@@ -52,7 +52,7 @@ config.shadowTiddlers['PlockStyles'] =
 	"\n/*}}}*/";
 
 store.addNotification('PlockStyles', refreshStyles);
-//}}}
+/*}}}*/
 // /%
 /* 
 !CSS
