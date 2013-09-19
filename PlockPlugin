@@ -12,6 +12,7 @@
 !Syntax
 TBD
 !Revision History
+*0.2.1 (2013/2/2): adding {{{text-indent: 0}}} to blocks
 *0.2 (2012/12/3):
 **adding {{{<two spaces>...<two linebreaks>}}} for more readable and easily inputable paragraph markup
 **removing the style to hide the first linebreak in <p> elements
@@ -56,9 +57,9 @@ config.formatters.push(
 });
 
 setStylesheet(
-"pb {display: block;}\n"+
+"pb {display: block; text-indent: 0}\n"+
 "pb > br:first-child {display: none;}\n"+
-"ib {display: inline-block; vertical-align: middle;}\n"+
+"ib {display: inline-block; vertical-align: middle; text-indent: 0}\n"+
 "ib > br:first-child {display: none;}\n"+
 "p {text-indent: 2em; margin: 0.5em 0.5em 0px 0px;}\n"+
 /*"p > br:first-child { display: none; }\n"+*/
