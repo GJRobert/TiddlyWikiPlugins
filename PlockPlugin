@@ -1,0 +1,38 @@
+/*{{{*/
+config.formatters.push(
+{
+	name: "paragraph",
+	match: "==",
+	termRegExp: /(==\n)/mg,
+	element: "p",
+	handler: config.formatterHelpers.createElementAndWikify
+});
+
+config.formatters.push(
+{
+	name: "plainBlock",
+	match: "=\{",
+	termRegExp: /(\}=)/mg,
+	element: "pb",
+	handler: config.formatterHelpers.createElementAndWikify
+});
+
+config.formatters.push(
+{
+	name: "inlineBlock",
+	match: "-\{",
+	termRegExp: /(\}-)/mg,
+	element: "ib",
+	handler: config.formatterHelpers.createElementAndWikify
+});
+
+setStylesheet(
+"pb {display: block;}\n"+
+"pb > br:first-child {display: none;}\n"+
+"ib {display: inline-block; vertical-align: middle;}\n"+
+"ib > br:first-child {display: none;}\n"+
+"p {border: 0.5px dashed LightGrey; background-color: rgb(242, 246, 235); text-indent: 2em; margin: 0.5em 0.5em 0px 0px;}\n"+
+"p > br:first-child { display: none; }\n"+
+"p * { text-indent: 0; }\n"+
+"\n","blockElementsStyles");
+/*}}}*/
