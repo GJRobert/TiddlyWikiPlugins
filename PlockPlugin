@@ -2,7 +2,7 @@
 |Name|PlockPlugin|
 |Source|http://plockplugin.tiddlyspace.com#PlockPlugin|
 |Documentation|http://gjrobert-tw.tiddlyspace.com#PlockPluginDoc|
-|Version|0.3|
+|Version|0.3.1|
 |Author|G.J.Robert Ciang (江瑋平)|
 |License|CC BY-SA|
 |~CoreVersion|2.1+|
@@ -60,8 +60,8 @@ pb {display: block; text-indent: 0;}
 pb > br:first-child {display: none;}
 ib {display: inline-block; vertical-align: middle; text-indent: 0;}
 ib > br:first-child {display: none;}
-p {text-indent: 2em; margin: 0.5em 0.5em 0px 0px;}
+/*p {text-indent: 2em; margin: 0.5em 0.5em 0px 0px;}
 p * { text-indent: 0; }
-p p { text-indent: 2em; }
+p p { text-indent: 2em; }*/
 !END */
 // %/
