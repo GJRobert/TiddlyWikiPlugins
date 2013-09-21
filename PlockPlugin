@@ -60,8 +60,9 @@ pb {display: block; text-indent: 0;}
 pb > br:first-child {display: none;}
 ib {display: inline-block; vertical-align: middle; text-indent: 0;}
 ib > br:first-child {display: none;}
-/*p {text-indent: 2em; margin: 0.5em 0.5em 0px 0px;}
+!Disabled styles
+p {text-indent: 2em; margin: 0.5em 0.5em 0px 0px;}
 p * { text-indent: 0; }
-p p { text-indent: 2em; }*/
-!END */
+p p { text-indent: 2em; }
+*/
 // %/
